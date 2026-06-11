@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahad Dental Care & Implant Centre — Rawalpindi</title>
+  <meta name="description" content="Rawalpindi's most loved dental clinic. Painless procedures, modern equipment led by Dr. Fahad. Trusted by 5,000+ patients including Babar Azam. Book now." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" onclick="navigate('home')">
+      <div class="nav-logo-icon">F</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Fahad Dental Care</span>
+        <span class="nav-logo-sub">& Implant Centre</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a class="nav-link active" id="nav-home" onclick="navigate('home')">Home</a>
+      <a class="nav-link" id="nav-services" onclick="navigate('services')">Services</a>
+      <a class="nav-link" id="nav-reviews" onclick="navigate('reviews')">Reviews</a>
+      <a class="nav-link" id="nav-blog" onclick="navigate('blog')">Blog</a>
+      <a class="nav-link" id="nav-visit" onclick="navigate('visit')">Visit Us</a>
+    </div>
+
+    <a class="btn btn-primary nav-cta" onclick="navigate('visit')">
+      Book Appointment
+    </a>
+
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="container">
+    <div class="nav-mobile" id="mobile-menu">
+      <a class="nav-link" onclick="navigate('home'); closeMobileMenu()">Home</a>
+      <a class="nav-link" onclick="navigate('services'); closeMobileMenu()">Services</a>
+      <a class="nav-link" onclick="navigate('reviews'); closeMobileMenu()">Reviews</a>
+      <a class="nav-link" onclick="navigate('blog'); closeMobileMenu()">Blog</a>
+      <a class="nav-link" onclick="navigate('visit'); closeMobileMenu()">Visit Us</a>
+      <a class="btn btn-primary" style="margin-top:0.5rem;border-radius:0.75rem" onclick="navigate('visit'); closeMobileMenu()">Book Appointment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================================================
+     PAGE: HOME
+========================================================= -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blob1"></div>
+    <div class="hero-blob2"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge-rating">
+          ⭐ <strong>4.9</strong> &nbsp;·&nbsp; 322 Google reviews
+        </span>
+
+        <h1 class="hero-title">
+          Rawalpindi's most
+          <span class="hero-title-highlight">loved</span>
+          dental clinic.
+        </h1>
+
+        <p class="hero-desc">
+          Painless procedures, modern equipment and a team led by <strong>Dr. Fahad</strong> —
+          trusted by over 5,000 patients across Pakistan, including national cricket captain Babar Azam.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" onclick="navigate('visit')">
+            Book Appointment
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-outline" href="tel:+923325447093">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +92 332 5447093
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-value">5,000+</div>
+            <div class="stat-label">Happy patients</div>
+          </div>
+          <div>
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Years of care</div>
+          </div>
+          <div>
+            <div class="stat-value">4.9★</div>
+            <div class="stat-label">Google rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="hero-img-box">
+          <img src="babar-azam.png"
+               alt="Dr. Fahad with Babar Azam" loading="lazy" />
+          <div class="hero-img-overlay"></div>
+        </div>
+        <div class="hero-badge-float">
+          <div class="hero-badge-icon">🏆</div>
+          <div>
+            <div class="hero-badge-label">Trusted by</div>
+            <div class="hero-badge-val">Babar Azam</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-tag">✦ Our Services</span>
+        <h2 class="section-heading" style="margin-top:0.75rem">World-class treatments,<br>painlessly delivered</h2>
+        <p class="section-sub">From routine check-ups to full-mouth rehabilitation — we've got every smile covered.</p>
+      </div>
+      <div class="services-grid" id="home-services-grid">
+        <!-- injected by JS -->
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a class="btn btn-outline" onclick="navigate('services')" style="border-color:var(--sky-300)">
+          View all services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELEBRITY TRUST -->
+  <section class="celeb-section">
+    <div class="container celeb-inner">
+      <div class="celeb-img-wrap reveal">
+        <div class="celeb-img" style="max-width:28rem">
+          <img src="babar-azam.png"
+               alt="Dr. Fahad with Babar Azam" loading="lazy" />
+        </div>
+      </div>
+      <div class="celeb-content reveal">
+        <div class="celeb-tag">⭐ Celebrity Trust</div>
+        <h2 class="celeb-heading">Trusted by Pakistan's National Cricket Captain</h2>
+        <p class="celeb-desc">
+          Babar Azam, one of the world's finest batsmen, chose Fahad Dental Care for his dental treatment.
+          Our commitment to painless, premium dentistry has earned us the trust of thousands — from everyday
+          heroes to national icons.
+        </p>
+        <div class="celeb-cta">
+          <a class="btn btn-white" onclick="navigate('visit')">
+            Book Your Visit
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-tag">💬 Patient Stories</span>
+        <h2 class="section-heading" style="margin-top:0.75rem">What our patients say</h2>
+        <p class="section-sub">Real reviews from real patients — all verified on Google.</p>
+      </div>
+      <div class="testimonials-grid" id="home-testimonials-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS SECTION -->
+  <section class="doctors-section">
+    <div class="container">
+      <div class="doctors-header reveal">
+        <span class="section-tag">👨‍⚕️ Our Team</span>
+        <h2 class="section-heading" style="margin-top:0.75rem">Meet the doctors</h2>
+        <p class="section-sub" style="margin-inline:auto">Experienced, compassionate professionals dedicated to your smile.</p>
+      </div>
+      <div class="doctors-grid" id="home-doctors-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #page-home -->
+
+
+<!-- =========================================================
+     PAGE: SERVICES
+========================================================= -->
+<div class="page" id="page-services">
+  <div style="padding-top:7rem;padding-bottom:3rem;background:var(--sky-50);text-align:center">
+    <div class="container">
+      <span class="section-tag">✦ Our Services</span>
+      <h1 class="section-heading" style="margin-top:0.75rem;font-size:clamp(2rem,4vw,3rem)">Everything your smile needs</h1>
+      <p class="section-sub" style="margin-inline:auto;margin-top:1rem">Advanced dental care across 8 specialties — all under one roof in Rawalpindi.</p>
+    </div>
+  </div>
+  <section class="services-section" style="background:white;padding-top:4rem">
+    <div class="container">
+      <div class="services-grid" id="all-services-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- =========================================================
+     PAGE: REVIEWS
+========================================================= -->
+<div class="page" id="page-reviews">
+  <div class="reviews-hero">
+    <div class="container">
+      <span class="section-tag">⭐ Patient Reviews</span>
+      <h1 class="section-heading" style="margin-top:0.75rem;font-size:clamp(2rem,4vw,3rem)">What our patients say</h1>
+      <div class="reviews-overall">
+        <div>
+          <div class="reviews-number">4.9</div>
+          <div class="reviews-stars-big">⭐⭐⭐⭐⭐</div>
+          <div style="font-size:0.9rem;color:var(--slate-500);margin-top:0.5rem">Based on 322 Google reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section style="padding-block:4rem">
+    <div class="container">
+      <div class="testimonials-grid" id="all-reviews-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- =========================================================
+     PAGE: BLOG
+========================================================= -->
+<div class="page" id="page-blog">
+  <div class="blog-hero">
+    <div class="container">
+      <span class="section-tag">📝 Dental Tips</span>
+      <h1 class="section-heading" style="margin-top:0.75rem;font-size:clamp(2rem,4vw,3rem)">Your dental health, explained</h1>
+      <p class="section-sub" style="margin-inline:auto;margin-top:1rem">Expert tips and insights from the Fahad Dental Care team.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="blog-grid" id="blog-grid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     PAGE: VISIT US
+========================================================= -->
+<div class="page" id="page-visit">
+  <div style="padding-top:7rem;padding-bottom:3rem;background:var(--sky-50);text-align:center">
+    <div class="container">
+      <span class="section-tag">📍 Find Us</span>
+      <h1 class="section-heading" style="margin-top:0.75rem;font-size:clamp(2rem,4vw,3rem)">Visit Fahad Dental Care</h1>
+      <p class="section-sub" style="margin-inline:auto;margin-top:1rem">We're centrally located in Rawalpindi, ready to welcome you.</p>
+    </div>
+  </div>
+
+  <section class="visit-section">
+    <div class="container">
+      <div class="visit-grid">
+        <!-- LEFT: Info -->
+        <div class="visit-info">
+          <h2>Clinic Information</h2>
+          <p>Fahad Dental Care & Implant Centre is conveniently located on Main Saidpur Road, Rawalpindi.</p>
+
+          <div class="info-block">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <div class="info-label">Address</div>
+                <div class="info-val">Main Saidpur Rd, opposite Bank of Punjab, near Excel lab & Royal steel works, Asghar Mall Scheme, Rawalpindi, 44000</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <div class="info-label">Phone</div>
+                <div class="info-val"><a href="tel:+923325447093">+92 332 5447093</a></div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">💬</div>
+              <div>
+                <div class="info-label">WhatsApp</div>
+                <div class="info-val"><a href="https://wa.me/923325447093" target="_blank">Chat on WhatsApp</a></div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🕐</div>
+              <div>
+                <div class="info-label">Opening Hours</div>
+                <div class="hours-grid" style="margin-top:0.5rem">
+                  <div class="hours-row"><span class="day">Mon–Sat</span><span>10 AM – 10 PM</span></div>
+                  <div class="hours-row"><span class="day">Sunday</span><span>2 PM – 10 PM</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Fahad+Dental+Care+%26+Implant+Centre,+Main+Saidpur+Road,+Rawalpindi&output=embed"
+              title="Fahad Dental Care location"
+              allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT: Appointment Form -->
+        <div>
+          <div class="appt-form-wrap">
+            <h3 class="form-title">Book an Appointment</h3>
+            <p class="form-sub">Fill in the form and we'll confirm within 24 hours.</p>
+
+            <form id="appt-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group" style="margin-top:1.25rem">
+                  <label class="form-label" for="fname">First name</label>
+                  <input class="form-control" type="text" id="fname" placeholder="e.g. Ahmed" required />
+                </div>
+                <div class="form-group" style="margin-top:1.25rem">
+                  <label class="form-label" for="lname">Last name</label>
+                  <input class="form-control" type="text" id="lname" placeholder="e.g. Khan" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone-input">Phone</label>
+                  <input class="form-control" type="tel" id="phone-input" placeholder="+92 3XX XXXXXXX" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email-input">Email (optional)</label>
+                  <input class="form-control" type="email" id="email-input" placeholder="you@example.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service-select">Service needed</label>
+                <select class="form-control" id="service-select" required>
+                  <option value="">Select a service…</option>
+                  <option>Dental Implants</option>
+                  <option>Root Canal Treatment</option>
+                  <option>Scaling & Polishing</option>
+                  <option>Teeth Whitening</option>
+                  <option>Braces & Clear Aligners</option>
+                  <option>Wisdom Tooth Extraction</option>
+                  <option>Veneers & Crowns</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>General Checkup</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="preferred-date">Preferred date</label>
+                  <input class="form-control" type="date" id="preferred-date" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="preferred-time">Preferred time</label>
+                  <select class="form-control" id="preferred-time">
+                    <option value="">Any time</option>
+                    <option>Morning (10 AM – 1 PM)</option>
+                    <option>Afternoon (1 PM – 5 PM)</option>
+                    <option>Evening (5 PM – 10 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message-input">Additional notes (optional)</label>
+                <textarea class="form-control" id="message-input" placeholder="Any details about your dental concern…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Confirm Appointment
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+            </form>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon">✅</div>
+              <div class="success-title">Appointment Request Sent!</div>
+              <p class="success-desc">Thank you! We'll call you back within a few hours to confirm your slot.</p>
+              <a href="https://wa.me/923325447093" target="_blank" class="btn btn-primary" style="margin-top:1.5rem">
+                Chat on WhatsApp too
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-icon">F</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Fahad Dental Care</span>
+            <span class="nav-logo-sub">& Implant Centre, Rawalpindi</span>
+          </div>
+        </div>
+        <p>Rawalpindi's most loved dental clinic. Painless procedures, modern equipment, and a team you can trust.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" class="social-btn" title="Facebook">f</a>
+          <a href="https://wa.me/923325447093" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          <a href="https://youtube.com" target="_blank" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a onclick="navigate('home')">Home</a></li>
+          <li><a onclick="navigate('services')">Services</a></li>
+          <li><a onclick="navigate('reviews')">Patient Reviews</a></li>
+          <li><a onclick="navigate('blog')">Blog</a></li>
+          <li><a onclick="navigate('visit')">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923325447093">+92 332 5447093</a></li>
+          <li><a href="https://wa.me/923325447093" target="_blank">WhatsApp Us</a></li>
+          <li style="color:var(--slate-500);font-size:0.875rem;line-height:1.6">
+            Main Saidpur Rd, Asghar Mall Scheme, Rawalpindi
+          </li>
+          <li style="color:var(--slate-500);font-size:0.875rem">Mon–Sat: 10 AM – 10 PM</li>
+          <li style="color:var(--slate-500);font-size:0.875rem">Sunday: 2 PM – 10 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Fahad Dental Care & Implant Centre. All rights reserved.</span>
+      <span>Made with ❤️ in Rawalpindi</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a class="whatsapp-float" href="https://wa.me/923325447093" target="_blank" title="Chat on WhatsApp">
+  💬
+</a>
+
+
+<!-- =========================================================
+     JAVASCRIPT — DATA + SPA ROUTER
+========================================================= -->
+<script>
+  /* ---- DATA ---- */
+  const SERVICES = [
+    {
+      slug: "dental-implants",
+      title: "Dental Implants",
+      short: "Permanent, natural-looking tooth replacement.",
+      description: "State-of-the-art titanium implants placed by experienced surgeons. Restore your bite, speech, and confidence with implants designed to last a lifetime.",
+      icon: "🦷",
+      duration: "2–4 visits",
+      image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "root-canal",
+      title: "Root Canal Treatment",
+      short: "Save your natural tooth, painlessly.",
+      description: "Modern rotary endodontics with single-sitting RCT options. We use local anaesthesia and gentle techniques so most patients feel nothing at all.",
+      icon: "🛡️",
+      duration: "1–2 visits",
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "scaling-polishing",
+      title: "Scaling & Polishing",
+      short: "Deep cleaning for a brighter, healthier smile.",
+      description: "Ultrasonic scaling removes plaque and tartar, while professional polishing leaves your teeth visibly cleaner and your gums healthier.",
+      icon: "💧",
+      duration: "30–45 mins",
+      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "teeth-whitening",
+      title: "Teeth Whitening",
+      short: "Multiple shades whiter in a single visit.",
+      description: "In-clinic professional whitening that is safe on enamel and delivers a dramatic, photo-ready smile in under an hour.",
+      icon: "☀️",
+      duration: "60 mins",
+      image: "https://images.unsplash.com/photo-1581585504108-bbfc8731a3e6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "braces-aligners",
+      title: "Braces & Clear Aligners",
+      short: "Straighter teeth with metal or invisible options.",
+      description: "Traditional braces and modern clear aligner therapy planned with 3D scans. Discreet, effective and comfortable for all ages.",
+      icon: "😁",
+      duration: "6–18 months",
+      image: "https://images.unsplash.com/photo-1612538498456-e861df91d4d0?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "wisdom-tooth",
+      title: "Wisdom Tooth Extraction",
+      short: "Gentle removal with rapid recovery.",
+      description: "Surgical and simple wisdom-tooth removal by trained dental surgeons. We follow strict sterilisation and modern pain-management protocols.",
+      icon: "⚡",
+      duration: "30–60 mins",
+      image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "veneers-crowns",
+      title: "Veneers & Crowns",
+      short: "Cosmetic upgrades and full-mouth rehabilitation.",
+      description: "Porcelain veneers and zirconia crowns crafted for a naturally radiant look. Ideal for chipped, stained, or broken teeth.",
+      icon: "👑",
+      duration: "2–3 visits",
+      image: "https://images.unsplash.com/photo-1588776814546-ec97cf6a3232?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      slug: "cosmetic-dentistry",
+      title: "Cosmetic Dentistry",
+      short: "A complete smile makeover tailored to you.",
+      description: "Combining multiple cosmetic treatments into one bespoke plan — whitening, bonding, veneers or contouring for a stunning result.",
+      icon: "❤️",
+      duration: "Varies",
+      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80"
+    }
+  ];
+
+  const TESTIMONIALS = [
+    { name: "Ayesha Tariq", text: "I was terrified of dentists my whole life. Dr. Fahad made my root canal absolutely painless. I actually fell asleep! Cannot recommend enough.", rating: 5 },
+    { name: "Muhammad Ali", text: "Got dental implants here after losing a tooth in an accident. The implant looks so natural that no one can tell the difference. Outstanding work.", rating: 5 },
+    { name: "Sana Butt", text: "Best teeth whitening experience! My teeth are several shades whiter and my smile looks amazing in photos now. The staff is incredibly professional.", rating: 5 },
+    { name: "Bilal Chaudhry", text: "My entire family comes here for checkups. The clinic is spotlessly clean, the equipment is modern and Dr. Fahad takes time to explain everything.", rating: 5 },
+    { name: "Fatima Malik", text: "I travelled from Islamabad specifically for the braces consultation. Worth every kilometre. Clear aligners fitted perfectly and the progress is visible.", rating: 5 },
+    { name: "Usman Raza", text: "Got my wisdom tooth removed here and it was painless. Proper sedation, precise extraction. Was eating normally the next day. Highly recommended!", rating: 5 },
+  ];
+
+  const DOCTORS = [
+    { name: "Dr. Fahad", role: "BDS, FCPS (Orthodontics)", speciality: "Lead Dentist & Implantologist", exp: "10+ years experience", initial: "F" },
+    { name: "Dr. Sana", role: "BDS, FCPS", speciality: "Endodontics & Restorative", exp: "7+ years experience", initial: "S" },
+    { name: "Dr. Hassan", role: "BDS", speciality: "Oral & Maxillofacial Surgery", exp: "5+ years experience", initial: "H" },
+  ];
+
+  const BLOG_POSTS = [
+    {
+      title: "Why painless dentistry is no longer a myth",
+      excerpt: "Modern sedation techniques and advanced anaesthetics mean dental treatments today are more comfortable than ever before.",
+      tag: "Patient Guide",
+      date: "May 2025",
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
+      readTime: "4 min read"
+    },
+    {
+      title: "Dental implants vs. dentures: which is right for you?",
+      excerpt: "Both replace missing teeth but differ hugely in feel, maintenance and longevity. Here's what you need to know before deciding.",
+      tag: "Implants",
+      date: "Apr 2025",
+      image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80",
+      readTime: "6 min read"
+    },
+    {
+      title: "5 habits that are secretly damaging your enamel",
+      excerpt: "From sipping lemon water to night-time grinding — discover the everyday habits your teeth hate most.",
+      tag: "Oral Health",
+      date: "Mar 2025",
+      image: "https://images.unsplash.com/photo-1581585504108-bbfc8731a3e6?auto=format&fit=crop&w=800&q=80",
+      readTime: "3 min read"
+    },
+    {
+      title: "Clear aligners vs. traditional braces: the honest verdict",
+      excerpt: "We break down cost, effectiveness, comfort, and suitability so you can make the right orthodontic choice.",
+      tag: "Orthodontics",
+      date: "Feb 2025",
+      image: "https://images.unsplash.com/photo-1612538498456-e861df91d4d0?auto=format&fit=crop&w=800&q=80",
+      readTime: "5 min read"
+    },
+    {
+      title: "How to care for your teeth after whitening",
+      excerpt: "Post-whitening maintenance makes all the difference. Follow these simple steps to keep your results lasting longer.",
+      tag: "Cosmetics",
+      date: "Jan 2025",
+      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
+      readTime: "3 min read"
+    },
+    {
+      title: "When is a root canal actually necessary?",
+      excerpt: "Many patients are surprised to learn RCT saves teeth rather than removing them. Here's when and why it's the right call.",
+      tag: "Endodontics",
+      date: "Dec 2024",
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80",
+      readTime: "4 min read"
+    },
+  ];
+
+  /* ---- RENDER HELPERS ---- */
+  function serviceCardHTML(s) {
+    return `
+      <div class="service-card" onclick="navigate('visit')">
+        <div class="service-img">
+          <img src="${s.image}" alt="${s.title}" loading="lazy" />
+        </div>
+        <div class="service-body">
+          <div class="service-icon-row">
+            <div class="service-icon-chip">${s.icon}</div>
+            <span class="service-duration">⏱ ${s.duration}</span>
+          </div>
+          <div class="service-title">${s.title}</div>
+          <div class="service-desc">${s.short}</div>
+        </div>
+      </div>`;
+  }
+
+  function testimonialCardHTML(t) {
+    const stars = '⭐'.repeat(t.rating);
+    const initials = t.name.split(' ').map(w => w[0]).join('');
+    return `
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">${stars}</div>
+        <p class="testimonial-text">${t.text}</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">${initials}</div>
+          <div>
+            <div class="author-name">${t.name}</div>
+            <div class="author-verified">✓ Verified Google Review</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function doctorCardHTML(d) {
+    return `
+      <div class="doctor-card">
+        <div class="doctor-img">
+          <div class="doctor-img-placeholder">${d.initial}</div>
+        </div>
+        <div class="doctor-name">${d.name}</div>
+        <div class="doctor-role">${d.speciality}</div>
+        <div class="doctor-exp">${d.exp}</div>
+      </div>`;
+  }
+
+  function blogCardHTML(p) {
+    return `
+      <div class="blog-card">
+        <div class="blog-card-img">
+          <img src="${p.image}" alt="${p.title}" loading="lazy" />
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">${p.tag}</span>
+          <h3 class="blog-title">${p.title}</h3>
+          <p class="blog-excerpt">${p.excerpt}</p>
+          <div class="blog-meta">
+            <span>${p.date}</span>
+            <span>${p.readTime}</span>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ---- POPULATE GRIDS ---- */
+  function populateGrids() {
+    // Home page — 4 service cards
+    document.getElementById('home-services-grid').innerHTML =
+      SERVICES.slice(0, 4).map(serviceCardHTML).join('');
+
+    // Home testimonials — 3
+    document.getElementById('home-testimonials-grid').innerHTML =
+      TESTIMONIALS.slice(0, 3).map(testimonialCardHTML).join('');
+
+    // Home doctors
+    document.getElementById('home-doctors-grid').innerHTML =
+      DOCTORS.map(doctorCardHTML).join('');
+
+    // Services page — all
+    document.getElementById('all-services-grid').innerHTML =
+      SERVICES.map(serviceCardHTML).join('');
+
+    // Reviews page — all
+    document.getElementById('all-reviews-grid').innerHTML =
+      TESTIMONIALS.map(testimonialCardHTML).join('');
+
+    // Blog page
+    document.getElementById('blog-grid').innerHTML =
+      BLOG_POSTS.map(blogCardHTML).join('');
+  }
+
+  /* ---- SPA ROUTER ---- */
+  const pages = ['home', 'services', 'reviews', 'blog', 'visit'];
+
+  function navigate(pageId) {
+    pages.forEach(p => {
+      document.getElementById('page-' + p).classList.toggle('active', p === pageId);
+      const link = document.getElementById('nav-' + p);
+      if (link) link.classList.toggle('active', p === pageId);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Trigger reveal for newly shown page
+    setTimeout(triggerReveal, 100);
+  }
+
+  /* ---- MOBILE MENU ---- */
+  function toggleMobileMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+  function closeMobileMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+  }
+
+  /* ---- NAVBAR SCROLL ---- */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  /* ---- SCROLL REVEAL ---- */
+  function triggerReveal() {
+    const els = document.querySelectorAll('.reveal:not(.in)');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(el => observer.observe(el));
+  }
+
+  /* ---- FORM ---- */
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    document.getElementById('appt-form').style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  }
+
+  /* ---- INIT ---- */
+  document.addEventListener('DOMContentLoaded', () => {
+    populateGrids();
+    triggerReveal();
+  });
+</script>
+</body>
+</html>
